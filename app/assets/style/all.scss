@@ -6,10 +6,17 @@
     box-sizing: border-box;
     color:#121212;
     font-size:14px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
 }
 aside{
     height: 100vh;
     min-width: 296px;
+}
+mark{
+    background-color: $secondary;
+    color: $primary;
+    border-radius: 2px;
 }
 .sticky{
     position:sticky;
@@ -52,4 +59,13 @@ aside{
     .material-icons{
         color: $primary;
     }
+}
+.radius{
+    border-radius: 2px;
+}
+.list-item-disc{
+    list-style-type: disc;
+}
+.list-item-inside{
+    list-style-position: inside;
 }

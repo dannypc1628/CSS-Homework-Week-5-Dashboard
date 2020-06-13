@@ -1,16 +1,219 @@
-<div class="row">
-    <div class="col">
-        <div class="row">
-            <div class="col">Assignment</div>
-            <div class="col">All Courses</div>
-        </div>
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: Assignment
+---
+
+<div class="row justify-content-between mb-4">
+    <div class="col-4 d-flex align-items-center">
+        <h3 class="font-weight-bold mr-5">
+            Assignment
+        </h3>
+        <a href="#" class="d-flex text-decoration-none">
+            <span class="font-weight-bold large-font-size text-dark mr-2">
+                All Courses
+            </span>
+            <span class="material-icons text-primary">
+                keyboard_arrow_down
+            </span>
+        </a>
     </div>
-    <div class="col">
-        <img src="" alt="">
-        <img src="" alt="">
+    <div class="col-2 text-right">
+        <a class="mr-4">
+            <span class="material-icons">
+                search
+            </span>
+        </a>
+        <a>
+            <span class="material-icons">
+                notifications_active
+            </span>
+        </a>
     </div>
 </div>
+
 <div class="row">
-    <div class="col-4"></div>
-    <div class="col-8"></div>
+    <div class="col-md-4">
+        <div class="font-weight-bold large-font-size mb-1">All (4)</div>
+        <ul class="list-group radius">
+            <li class="list-group-item border-light bg-secondary">
+                <div>
+                    <div class="d-flex justify-content-between mb-1">
+                        <div class="small-font-size">Chapter Assignment 2</div>
+                        <div class="small-font-size">4 hrs ago</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="font-weight-bold large-font-size">Please check this file…</div>
+                        <small class="text-muted">Emily Wang</small>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item border-light">
+                <div>
+                    <div class="d-flex justify-content-between mb-1">
+                        <div class="small-font-size">Chapter Assignment 2</div>
+                        <div class="small-font-size">4 hrs ago</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="font-weight-bold large-font-size">Please check this file…</div>
+                        <small class="text-muted">Emily Wang</small>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item border-light">
+                <div>
+                    <div class="d-flex justify-content-between mb-1">
+                        <div class="small-font-size">Chapter Assignment 1</div>
+                        <div class="small-font-size">12 hrs ago</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="font-weight-bold large-font-size">My Homework</div>
+                        <small class="text-muted">David Xu</small>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item border-light">
+                <div>
+                    <div class="d-flex justify-content-between mb-1">
+                        <div class="small-font-size">Final Assignment</div>
+                        <div class="small-font-size">18 hrs ago</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="font-weight-bold large-font-size">Have a problem with this…</div>
+                        <small class="text-muted">Tony Wei</small>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item border-light">
+                <div>
+                    <div class="d-flex justify-content-between mb-1">
+                        <div class="small-font-size">Final Assignment</div>
+                        <div class="small-font-size">19 hrs ago</div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="font-weight-bold large-font-size">Did I do it right?</div>
+                        <small class="text-muted">Christina Lin</small>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="row my-1">
+            <div class="col text-right">
+                <small class="d-inline-block">2 comments</small>
+            </div>
+        </div>
+
+        <div class="card border-light mb-3">
+            <div class="card-header bg-secondary">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="small-font-size mb-1">Chapter Assignment 2 / HTML&CSS</div>
+                        <div class="font-weight-bold large-font-size">Please check this file for me, thanks!</div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a>
+                            <span class="d-inline-block material-icons">more_vert</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body radius">
+                <ul class="list-unstyled ">
+                    <li class="media">
+                        <img src="./assets/images/user-2.webp" class="mr-3 user-icon" alt="...">
+                        <div class="media-body pr-3">
+                            <div class="mb-3">
+                                <h5 class="mt-0 mb-0">Emily Wang</h5>
+                                <small class="text-muted ">10:38 AM (4 hours ago)</small>
+
+                            </div>
+                            <div>
+                                <p>
+                                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+                                    question:
+                                    Why in the following code the height of the <mark>div</mark> is bigger than the
+                                    height
+                                    of the <mark>img</mark> ?
+                                    There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                                    <br />What is the gap or extra space below image?
+                                </p>
+                            </div>
+                            <button type="button"
+                                class="btn btn-secondary border border-light radius d-flex align-items-center mb-4"><span
+                                    class="material-icons mr-1">attach_file</span><span
+                                    class="font-weight-bold">HW-2-David.zip</span></button>
+                            <hr class="mb-1">
+                        </div>
+                    </li>
+
+                    <li class="media mt-4">
+                        <img src="./assets/images/user-1.webp" class="mr-3 user-icon" alt="...">
+                        <div class="media-body pr-3">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <h5 class="mt-0 mb-1">Andy Chen (You)</h5>
+                                    <small class="text-muted ">13:24 AM (1 hours ago)</small>
+                                </div>
+                                <div>
+                                    <a>
+                                        <span class="material-icons mr-4">star_border</span>
+                                    </a>
+                                    <a>
+                                        <span class="material-icons">edit</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Hi David, by default, an image is rendered inline, like a letter so it sits on the
+                                    same
+                                    line that a, b, c and d sit on. There is space below that line for the descenders
+                                    you
+                                    find on letters like g, j, p and q.
+                                </p>
+                                <p>
+                                    You can:
+                                </p>
+
+                                <ul class="list-item-disc list-item-inside">
+                                    <li>adjust the <mark>vertical-align</mark> of the image to position it elsewhere
+                                        (e.g. the <mark>middle</mark> ) or 　</li>
+                                    <li>change the <mark>display</mark> so it isn’t inline.</li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-between py-2">
+                    <div>
+                        <a>
+                            <span class="material-icons mr-4 align-middle">
+                                keyboard_arrow_left
+                            </span>
+                        </a>
+                        <a>
+                            <span class="material-icons align-middle">
+                                keyboard_arrow_right
+                            </span>
+                        </a>
+                    </div>
+                    <div class="">
+                        <button type="button" class="btn btn-outline-primary radius mr-3 px-5">Mark as read</button>
+                        <button type="button" class="btn btn-primary radius px-5">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
