@@ -1,3 +1,55 @@
 @import "functions";
 @import "./helpers/variables";
 @import "bootstrap";
+
+*{
+    box-sizing: border-box;
+    color:#121212;
+    font-size:14px;
+}
+aside{
+    height: 100vh;
+    min-width: 296px;
+}
+.sticky{
+    position:sticky;
+    top: 0;
+}
+.abc{
+    color:blue;
+}
+.user-icon{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+}
+.small-font-size{
+    font-size:12px;
+}
+.large-font-size{
+    font-size:16px;
+}
+// li .aside-item{
+//     color:$primary;
+// }
+.aside-item{
+    font-size:16px;
+    font-weight: 700;
+    display:flex;
+    align-items:center;
+}
+.aside-item:hover{
+    position: relative;
+    color:$primary !important;
+    &::before{
+    content:'';
+    position:absolute;
+    left: -36px;
+    width:4px;
+    height: 24px;
+    background-color: $primary;
+    }
+    .material-icons{
+        color: $primary;
+    }
+}
