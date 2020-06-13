@@ -2,70 +2,156 @@
 @import "./helpers/variables";
 @import "bootstrap";
 
-*{
-    box-sizing: border-box;
-    color:#121212;
-    font-size:14px;
+* {
+  box-sizing: border-box;
+  color: $gray-800;
+}
+body{
+    font-size: 14px;
     line-height: 1.5;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
-aside{
-    height: 100vh;
-    min-width: 296px;
+aside {
+  height: 100vh;
+  min-width: 296px;
 }
-mark{
-    background-color: $secondary;
-    color: $primary;
-    border-radius: 2px;
+mark {
+  background-color: $secondary;
+  color: $primary;
+  border-radius: 2px;
 }
-.sticky{
-    position:sticky;
-    top: 0;
+.sticky {
+  position: sticky;
+  top: 0;
 }
-.abc{
-    color:blue;
+.abc {
+  color: blue;
 }
-.user-icon{
-    height: 40px;
-    width: 40px;
-    border-radius:50%;
+.user-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
-.small-font-size{
-    font-size:12px;
+.small-font-size {
+  font-size: 12px;
 }
-.large-font-size{
-    font-size:16px;
+.large-font-size {
+  font-size: 16px;
 }
 // li .aside-item{
 //     color:$primary;
 // }
-.aside-item{
-    font-size:16px;
-    font-weight: 700;
-    display:flex;
-    align-items:center;
-}
-.aside-item:hover{
+.aside-item {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: $gray-800;
+  &:hover {
     position: relative;
-    color:$primary !important;
-    &::before{
-    content:'';
-    position:absolute;
-    left: -36px;
-    width:4px;
+    text-decoration: none;
+    color: $primary !important;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -36px;
+      width: 4px;
+      height: 24px;
+      background-color: $primary;
+    }
+    .material-icons {
+      color: $primary;
+    }
+  }
+}
+.two-comment{
+    margin-bottom: 5.5px;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.aside-item--active {
+  align-items: center;
+  position: relative;
+  //   &:hover {
+  //     text-decoration: none;
+  //   }
+  color: $primary !important;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    width: 4px;
     height: 24px;
     background-color: $primary;
+  }
+  .material-icons {
+    color: $primary;
+  }
+}
+.radius {
+  border-radius: 2px;
+}
+.list-item-disc {
+  list-style-type: disc;
+}
+.list-item-inside {
+  list-style-position: inside;
+}
+.ul-padding{
+    padding-inline-start: 15px;
+}
+
+.table thead tr th {
+    vertical-align: bottom;
+    border-bottom: 1px solid $gray-800;
+}
+.table th ,.table td{
+    padding-top:19px;
+    padding-bottom:12px;
+    border-top: transparent;
+    border-bottom: 1px solid $light;
+}
+.border-none{
+    border:none !important;
+}
+
+.page-link{
+    border-width:1px;
+    color: $primary;
+    border-color: $primary;
+    padding: 6px 12px;
+    &:hover{
+        background-color: $primary;
+        color:$white;
+    }
+    .active{
+        background-color: $primary;
     }
     .material-icons{
-        color: $primary;
+        color:$primary;
+        &:hover{
+        color:$white;
+        }
     }
 }
-.radius{
-    border-radius: 2px;
+.page-link--first,.page-link--end{
+    padding: 2px;
+    padding-top: 4px;
+    padding-bottom:0px;
 }
-.list-item-disc{
-    list-style-type: disc;
+.page-item:first-child .page-link{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
-.list-item-inside{
-    list-style-position: inside;
+.page-item:last-child .page-link {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
+
