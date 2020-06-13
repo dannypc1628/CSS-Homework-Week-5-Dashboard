@@ -83,7 +83,7 @@ function browser() {
   browserSync.init({
     server: {
       baseDir: envOptions.browserSetting.dir,
-      reloadDebounce:envOptions.reloadDebounce
+      reloadDebounce:3000
     },
     port: envOptions.browserSetting.port,
     ui:{

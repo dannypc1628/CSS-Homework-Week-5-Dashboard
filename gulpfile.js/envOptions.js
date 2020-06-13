@@ -1,7 +1,6 @@
 const srcPath = './app';
 const distPath = './dist';
 const nodePath = './node_modules';
-const reloadDebounce = 2000;
 
 let envOptions = {
   string: 'env',
