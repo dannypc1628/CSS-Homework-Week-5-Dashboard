@@ -34,13 +34,13 @@
               <a class="aside-item"><span class="material-icons mr-3">forum</span>Question</a>
             </li>
             <li class="px-4 mb-4">
-              <a class="aside-item"><span class="material-icons mr-3">assignment</span>Assignment</a>
+              <a id="assignment" class="aside-item" href="./assignment.html"><span class="material-icons mr-3">assignment</span>Assignment</a>
             </li>
             <li class="px-4 mb-4">
               <a class="aside-item"><span class="material-icons mr-3">video_library</span>Course</a>
             </li>
             <li class="px-4 mb-4">
-              <a class="aside-item"><span class="material-icons mr-3">people</span>Admin</a>
+              <a id="admin" class="aside-item" href="./admin.html"><span class="material-icons mr-3">people</span>Admin</a>
             </li>
             <li class="px-4 mb-4">
               <a class="aside-item"><span class="material-icons mr-3">settings</span>Settings</a>
@@ -68,6 +68,21 @@
 
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script>
+    var path = window.location.pathname;
+    if(path.indexOf("assignment.html")!=-1){
+      var assignment = document.getElementById("assignment");
+      var thisClass = assignment.getAttribute("class");
+      assignment.setAttribute("class",thisClass+" aside-item--active");
+
+      
+    }
+    if(path.indexOf("admin.html")!=-1){
+      var admin = document.getElementById("admin");
+      var thisClass = admin.getAttribute("class");
+      admin.setAttribute("class",thisClass+" aside-item--active");
+    }
+  </script>
 </body>
 
 </html>
